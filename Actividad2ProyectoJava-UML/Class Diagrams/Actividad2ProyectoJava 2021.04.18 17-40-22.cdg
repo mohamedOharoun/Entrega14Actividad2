@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Actividad2ProyectoJava">
+  <ClassDiagramComponents>
+    <Class name="Cono" package="Actividad2" visibility="public" xPosition="32.0" yPosition="392.0">
+      <Fields>
+        <Field name="altura" type="float" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circulo" package="Actividad2" visibility="public" xPosition="331.0" yPosition="401.0">
+      <Fields>
+        <Field name="radio" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Punto" package="" visibility="public" xPosition="719.0" yPosition="391.0">
+      <Fields>
+        <Field name="x" type="float" visibility="private"/>
+        <Field name="y" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Cono-&gt;Circulo" source="Actividad2.Cono" target="Actividad2.Circulo" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Circulo-&gt;Punto" source="Actividad2.Circulo" target="Punto" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
